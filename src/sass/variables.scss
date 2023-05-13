@@ -1,12 +1,12 @@
 //?FONTS
-$primary-font: "Roboto";
-$secondary-font: "";
+$primary-font: "Open Sans";
+$secondary-font: "Inter";
 $default-font: sans-serif;
 
 //?COLORS
 //Main colors
-$primary-color: #007bff;
-$secondary-color: #6c757d;
+$primary-color: #263238;
+$secondary-color: #FF8C92;
 $white: #fff;
 $black: #000;
 
@@ -15,15 +15,16 @@ $success-color: #28a745;
 $danger-color: #dc3545;
 $info-color: #17a2b8;
 $warning-color: #ffc107;
-$light-color: #f8f9fa;
-$dark-color: #343a40;
+
+$light-color: #F2F2F2;
+$dark-color: #4E4E4E;
 
 //?COMPONENTS COLORS
 $background-color: $light-color;
-$header-color: $dark-color;
-$link-color: $light-color;
+$text-color: $primary-color;
+$header-color: $light-color;
+$link-color: $text-color;
 $link-color-hover: $warning-color;
-$text-color: #212529;
 $border-color: #ced4da;
 
 //?BREAK POINTS
@@ -36,6 +37,6 @@ $bp-xlarge: 1200px;
 $indents: 4px;
 
 //Header
-$height-header: 80px;
+$height-header: 100px;
 
 

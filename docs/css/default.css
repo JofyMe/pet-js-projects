@@ -3,11 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 main {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 body,
@@ -16,7 +16,7 @@ html,
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background-color: #f8f9fa;
+  background-color: #F2F2F2;
 }
 
 section {
@@ -46,227 +46,261 @@ li {
 }
 
 .container {
-  width: 1280px;
+  width: 1400px;
   max-width: 90%;
   margin: 0 auto;
 }
 
 #header {
-  height: 80px;
+  height: 100px;
 }
 @media screen and (max-width: 992px) {
   #header {
-    height: 72px;
+    height: 90px;
   }
 }
 @media screen and (max-width: 768px) {
   #header {
-    height: 64px;
+    height: 80px;
   }
 }
 @media screen and (max-width: 480px) {
   #header {
-    height: 56px;
+    height: 70px;
   }
 }
 
 h1 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 62.4px;
-  color: #212529;
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 91px;
+  color: #263238;
 }
 @media screen and (max-width: 992px) {
   h1 {
-    font-size: 43.2px;
-    line-height: 57.6px;
+    font-size: 63px;
+    line-height: 84px;
   }
 }
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 38.4px;
-    line-height: 52.8px;
+    font-size: 56px;
+    line-height: 77px;
   }
 }
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 33.6px;
-    line-height: 48px;
+    font-size: 49px;
+    line-height: 70px;
   }
 }
 
 h2 {
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 49.4px;
-  color: #212529;
+  line-height: 52px;
+  color: #263238;
 }
 @media screen and (max-width: 992px) {
   h2 {
-    font-size: 34.2px;
-    line-height: 45.6px;
+    font-size: 36px;
+    line-height: 48px;
   }
 }
 @media screen and (max-width: 768px) {
   h2 {
-    font-size: 30.4px;
-    line-height: 41.8px;
+    font-size: 32px;
+    line-height: 44px;
   }
 }
 @media screen and (max-width: 480px) {
   h2 {
-    font-size: 26.6px;
-    line-height: 38px;
+    font-size: 28px;
+    line-height: 40px;
   }
 }
 
 h3 {
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 32.5px;
-  color: #212529;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 45.5px;
+  color: #263238;
 }
 @media screen and (max-width: 992px) {
   h3 {
+    font-size: 31.5px;
+    line-height: 42px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 28px;
+    line-height: 38.5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 24.5px;
+    line-height: 35px;
+  }
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 39px;
+  color: #263238;
+}
+@media screen and (max-width: 992px) {
+  h4 {
+    font-size: 27px;
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h4 {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+
+h5 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36.4px;
+  color: #263238;
+}
+@media screen and (max-width: 992px) {
+  h5 {
+    font-size: 25.2px;
+    line-height: 33.6px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h5 {
+    font-size: 22.4px;
+    line-height: 30.8px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h5 {
+    font-size: 19.6px;
+    line-height: 28px;
+  }
+}
+
+h6 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 32.5px;
+  color: #263238;
+}
+@media screen and (max-width: 992px) {
+  h6 {
     font-size: 22.5px;
     line-height: 30px;
   }
 }
 @media screen and (max-width: 768px) {
-  h3 {
+  h6 {
     font-size: 20px;
     line-height: 27.5px;
   }
 }
 @media screen and (max-width: 480px) {
-  h3 {
+  h6 {
     font-size: 17.5px;
     line-height: 25px;
   }
 }
 
-h4 {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 26px;
-  color: #212529;
-}
-@media screen and (max-width: 992px) {
-  h4 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-}
-@media screen and (max-width: 768px) {
-  h4 {
-    font-size: 16px;
-    line-height: 22px;
-  }
-}
-@media screen and (max-width: 480px) {
-  h4 {
-    font-size: 14px;
-    line-height: 20px;
-  }
-}
-
-h5 {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20.8px;
-  color: #212529;
-}
-@media screen and (max-width: 992px) {
-  h5 {
-    font-size: 14.4px;
-    line-height: 19.2px;
-  }
-}
-@media screen and (max-width: 768px) {
-  h5 {
-    font-size: 12.8px;
-    line-height: 17.6px;
-  }
-}
-@media screen and (max-width: 480px) {
-  h5 {
-    font-size: 11.2px;
-    line-height: 16px;
-  }
-}
-
-h6 {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20.8px;
-  color: #212529;
-}
-@media screen and (max-width: 992px) {
-  h6 {
-    font-size: 14.4px;
-    line-height: 19.2px;
-  }
-}
-@media screen and (max-width: 768px) {
-  h6 {
-    font-size: 12.8px;
-    line-height: 17.6px;
-  }
-}
-@media screen and (max-width: 480px) {
-  h6 {
-    font-size: 11.2px;
-    line-height: 16px;
-  }
-}
-
 p {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20.8px;
-  color: #212529;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  color: #263238;
+  font-family: "Inter";
 }
 @media screen and (max-width: 992px) {
   p {
-    font-size: 14.4px;
-    line-height: 19.2px;
+    font-size: 16.2px;
+    line-height: 21.6px;
   }
 }
 @media screen and (max-width: 768px) {
   p {
-    font-size: 12.8px;
-    line-height: 17.6px;
+    font-size: 14.4px;
+    line-height: 19.8px;
   }
 }
 @media screen and (max-width: 480px) {
   p {
-    font-size: 11.2px;
-    line-height: 16px;
+    font-size: 12.6px;
+    line-height: 18px;
+  }
+}
+
+a {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.4px;
+  color: #263238;
+  font-family: "Inter";
+}
+@media screen and (max-width: 992px) {
+  a {
+    font-size: 16.2px;
+    line-height: 21.6px;
+  }
+}
+@media screen and (max-width: 768px) {
+  a {
+    font-size: 14.4px;
+    line-height: 19.8px;
+  }
+}
+@media screen and (max-width: 480px) {
+  a {
+    font-size: 12.6px;
+    line-height: 18px;
   }
 }
 
 button {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20.8px;
-  color: #212529;
+  width: 200px;
+  height: 80px;
+  background: #fff;
+  border-radius: 70px;
+  border: 0;
+  padding: 20px 40px 20px;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.4px;
+  color: #263238;
 }
 @media screen and (max-width: 992px) {
   button {
-    font-size: 14.4px;
-    line-height: 19.2px;
+    font-size: 16.2px;
+    line-height: 21.6px;
   }
 }
 @media screen and (max-width: 768px) {
   button {
-    font-size: 12.8px;
-    line-height: 17.6px;
+    font-size: 14.4px;
+    line-height: 19.8px;
   }
 }
 @media screen and (max-width: 480px) {
   button {
-    font-size: 11.2px;
-    line-height: 16px;
+    font-size: 12.6px;
+    line-height: 18px;
   }
 }
 
