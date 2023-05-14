@@ -1,11 +1,6 @@
 @import "variables.scss";
 
 #hero {
-  .hero {
-  }
-}
-
-#hero {
   background-color: hsba(28, 6%, 96%, 1);
   .hero {
     display: grid;
@@ -64,6 +59,113 @@
       width: 100%;
       img {
         width: 100%;
+      }
+    }
+  }
+}
+
+#expert {
+  padding: 10% 0;
+  background-color: $white;
+  .expert {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: $bp-container) {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+    }
+    @media screen and (max-width: $bp-medium) {
+      grid-template-rows: 40% 80%;
+    }
+
+    &__text {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-template-columns: 30% 60%;
+
+      @media screen and (max-width: $bp-container) {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 30% 40%;
+      }
+      @media screen and (max-width: $bp-small) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        text-align: center;
+      }
+
+      .expert__years {
+        h1 {
+          font-size: 120px;
+          span {
+          }
+        }
+        @media screen and (max-width: $bp-container) {
+          display: grid;
+          justify-content: end;
+          margin-right: 30px;
+        }
+        @media screen and (max-width: $bp-small) {
+          justify-content: center;
+          margin-bottom: 40px;
+        }
+      }
+      .expert__years-text {
+        .expert__title {
+        }
+        .expert__desc {
+          margin-top: 21px;
+        }
+      }
+    }
+    &__skills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 15px;
+      grid-template-columns: 50% 50%;
+
+      @media screen and (max-width: $bp-medium) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 20px;
+      }
+
+      .expert__item {
+        padding: 45px 36px 45px 36px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 25px;
+        @media screen and (max-width: $bp-container) {
+          display: grid;
+          justify-content: center;
+        }
+        @media screen and (max-width: $bp-small) {
+        img {
+          width: 100%;
+        }
+        }
+
+
+        .expert__subtitle {
+          margin-top: 38px;
+        }
+        &.expert__item-blue {
+          background: #f2f6f7;
+          color: #687982;
+        }
+        &.expert__item-red {
+          background: #f3eaeb;
+          color: #936c70;
+        }
       }
     }
   }

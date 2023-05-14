@@ -19,9 +19,6 @@ html,
   background-color: #F2F2F2;
 }
 
-section {
-  margin: 10% auto;
-}
 @media screen and (max-width: 768px) {
   section {
     margin: 15% auto;
@@ -436,7 +433,7 @@ button span {
   bottom: 0;
 }
 #header .header__burger span {
-  height: 2.5px;
+  height: 3px;
   width: 100%;
   transform: scale(1);
   background-color: #263238;
@@ -566,4 +563,111 @@ button span {
 }
 #hero .hero__img img {
   width: 100%;
+}
+
+#expert {
+  padding: 10% 0;
+  background-color: #fff;
+}
+#expert .expert {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1400px) {
+  #expert .expert {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  #expert .expert {
+    grid-template-rows: 40% 80%;
+  }
+}
+#expert .expert__text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-columns: 30% 60%;
+}
+@media screen and (max-width: 1400px) {
+  #expert .expert__text {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 30% 40%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #expert .expert__text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+  }
+}
+#expert .expert__text .expert__years h1 {
+  font-size: 120px;
+}
+@media screen and (max-width: 1400px) {
+  #expert .expert__text .expert__years {
+    display: grid;
+    justify-content: end;
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #expert .expert__text .expert__years {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+#expert .expert__text .expert__years-text .expert__desc {
+  margin-top: 21px;
+}
+#expert .expert__skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 768px) {
+  #expert .expert__skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 20px;
+  }
+}
+#expert .expert__skills .expert__item {
+  padding: 45px 36px 45px 36px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 25px;
+}
+@media screen and (max-width: 1400px) {
+  #expert .expert__skills .expert__item {
+    display: grid;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  #expert .expert__skills .expert__item img {
+    width: 100%;
+  }
+}
+#expert .expert__skills .expert__item .expert__subtitle {
+  margin-top: 38px;
+}
+#expert .expert__skills .expert__item.expert__item-blue {
+  background: #f2f6f7;
+  color: #687982;
+}
+#expert .expert__skills .expert__item.expert__item-red {
+  background: #f3eaeb;
+  color: #936c70;
 }
