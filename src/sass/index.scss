@@ -1,0 +1,70 @@
+@import "variables.scss";
+
+#hero {
+  .hero {
+  }
+}
+
+#hero {
+  background-color: hsba(28, 6%, 96%, 1);
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: $bp-large) {
+      display: flex;
+      flex-wrap: wrap-reverse;
+    }
+
+    &__text {
+      width: 100%;
+      .hero__subtitle {
+        font-weight: 800;
+      }
+      .hero__title {
+        margin-top: 8px;
+        span {
+          color: $secondary-color;
+        }
+        @media screen and (max-width: $bp-small) {
+          font-size: 40px;
+          line-height: 48px;
+        }
+      }
+      .hero__desc {
+        margin-top: 14px;
+      }
+      .hero__buttons {
+        display: flex;
+        align-self: center;
+        margin-top: 38px;
+        .hero__button {
+          &:last-child {
+            margin-left: 22px;
+          }
+        }
+        @media screen and (max-width: $bp-large) {
+          display: grid;
+          .hero__button {
+            width: 100%;
+            &:last-child {
+              margin-left: 0px;
+              margin-top: 22px;
+            }
+          }
+        }
+      }
+    }
+    &__img {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

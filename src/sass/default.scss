@@ -33,7 +33,7 @@ section {
   }
 
   &:first-child {
-    margin: 0 auto;
+    margin: 5% auto;
   }
 }
 
@@ -56,13 +56,13 @@ li {
   height: $height-header;
 
   @media screen and (max-width: $bp-large) {
-    height: $height-header * 0.9;
-  }
-  @media screen and (max-width: $bp-medium) {
     height: $height-header * 0.8;
   }
-  @media screen and (max-width: $bp-small) {
+  @media screen and (max-width: $bp-medium) {
     height: $height-header * 0.7;
+  }
+  @media screen and (max-width: $bp-small) {
+    height: $height-header * 0.6;
   }
 }
 
@@ -128,12 +128,29 @@ a {
 button {
   width: 200px;
   height: 80px;
-  background: $white;
   border-radius: 70px;
   border: 0;
   padding: 20px 40px 20px;
   font-family: $secondary-font;
   @include font(18px, 600, $text-color);
+
+  &.button__white {
+    background: $white;
+    color: $primary-color;
+    &:hover {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+  &.button__black {
+    background: $primary-color;
+    color: $white;
+    &:hover {
+      background: $white;
+      color: $primary-color;
+      border: 2px solid $primary-color;
+    }
+  }
 }
 
 h1,
@@ -147,6 +164,6 @@ p,
 button {
   transition: all 0.3s;
   span {
-    color: $warning-color;
+    color: $secondary-color;
   }
 }

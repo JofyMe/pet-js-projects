@@ -33,7 +33,7 @@ section {
   }
 }
 section:first-child {
-  margin: 0 auto;
+  margin: 5% auto;
 }
 
 a {
@@ -56,17 +56,17 @@ li {
 }
 @media screen and (max-width: 992px) {
   #header {
-    height: 90px;
+    height: 80px;
   }
 }
 @media screen and (max-width: 768px) {
   #header {
-    height: 80px;
+    height: 70px;
   }
 }
 @media screen and (max-width: 480px) {
   #header {
-    height: 70px;
+    height: 60px;
   }
 }
 
@@ -275,7 +275,6 @@ a {
 button {
   width: 200px;
   height: 80px;
-  background: #fff;
   border-radius: 70px;
   border: 0;
   padding: 20px 40px 20px;
@@ -303,6 +302,23 @@ button {
     line-height: 18px;
   }
 }
+button.button__white {
+  background: #fff;
+  color: #263238;
+}
+button.button__white:hover {
+  background: #263238;
+  color: #fff;
+}
+button.button__black {
+  background: #263238;
+  color: #fff;
+}
+button.button__black:hover {
+  background: #fff;
+  color: #263238;
+  border: 2px solid #263238;
+}
 
 h1,
 h2,
@@ -324,5 +340,5 @@ h6 span,
 a span,
 p span,
 button span {
-  color: #ffc107;
+  color: #FF8C92;
 }

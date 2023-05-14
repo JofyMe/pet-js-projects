@@ -50,11 +50,15 @@
         }
       }
 
-      .header__chat {
+      .header__button {
         display: flex;
         justify-content: center;
         align-items: center;
 
+        @media screen and (max-width: $bp-large) {
+          margin: 0 auto;
+        }
+        
         img {
           width: 22px;
           margin-left: 8px;
