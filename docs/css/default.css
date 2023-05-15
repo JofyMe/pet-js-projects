@@ -6,31 +6,13 @@
   font-family: "Open Sans", sans-serif;
 }
 
-main {
-  padding-top: 100px;
-}
-
 body,
 html,
 #wrapper {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background-color: #F2F2F2;
-}
-
-@media screen and (max-width: 768px) {
-  section {
-    margin: 15% auto;
-  }
-}
-@media screen and (max-width: 480px) {
-  section {
-    margin: 20% auto;
-  }
-}
-section:first-child {
-  margin: 5% auto;
+  background-color: #fff;
 }
 
 a {
@@ -274,7 +256,6 @@ button {
   height: 80px;
   border-radius: 70px;
   border: 0;
-  padding: 20px 40px 20px;
   font-family: "Inter";
   font-size: 18px;
   font-weight: 600;
@@ -298,6 +279,9 @@ button {
     font-size: 12.6px;
     line-height: 18px;
   }
+}
+button a {
+  padding: 40px 80px;
 }
 button.button__white {
   background: #fff;
