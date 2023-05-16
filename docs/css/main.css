@@ -734,3 +734,35 @@ button span {
 #work .work .work__button {
   margin: 80px auto;
 }
+
+#footer .footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  padding: 80px 0 40px 0;
+}
+@media screen and (max-width: 992px) {
+  #footer .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+  }
+}
+#footer .footer__logo {
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+}
+#footer .footer__text {
+  text-align: end;
+}
+@media screen and (max-width: 992px) {
+  #footer .footer__text {
+    text-align: center;
+    margin-top: 24px;
+  }
+}
+#footer .footer__text .footer__desc {
+  margin-top: 12px;
+}
