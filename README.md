@@ -1,6 +1,12 @@
-# HTML TEMPLATE
+# PET JS PROJECTS
 
 Project assembler template for layout and further convenient work
+
+## List Project
+* Calculator - The usual calculator
+* TODO List - Project thanks to which you can specify the readiness of daily tasks
+* Currency Converter - A special form that allows you to convert currencies
+* Language Learning - A project through which I want to continue practicing English
 
 ## Built With
 * [HTML5](https://en.wikipedia.org/wiki/HTML5) - Markup language
@@ -14,7 +20,7 @@ Project assembler template for layout and further convenient work
 
 * **Oleg Tretiak** - *Initial work* - [JofyMe](https://github.com/JofyMe)
 
-See also the list of [contributors](https://github.com/JofyMe/html-template/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/JofyMe/pet-js-projects/graphs/contributors) who participated in this project.
 
 ## License
 
