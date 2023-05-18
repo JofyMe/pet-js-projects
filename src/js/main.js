@@ -36,6 +36,10 @@ actions.forEach((i) => {
     const value1 = parseFloat(num1.value);
     const value2 = parseFloat(num2.value);
 
+    if (isNaN(value1) || isNaN(value2)) {
+      result.textContent = "Result: Invalid variable";
+      return;
+    }
     switch (i) {
       case add:
         result.textContent = "Result: " + (value1 + value2);
@@ -47,6 +51,11 @@ actions.forEach((i) => {
         result.textContent = "Result: " + value1 * value2;
         break;
       case div:
+        if ((value1 || value2) === 0) {
+          result.textContent = "Result: Divide by zero";
+          break;
+        }
+
         result.textContent = "Result: " + value1 / value2;
         break;
 
