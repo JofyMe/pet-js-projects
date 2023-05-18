@@ -16,3 +16,41 @@ burger.addEventListener("click", (e) => {
   burger.classList.toggle("active");
   navbar.classList.toggle("open");
 });
+
+//Calculator code
+
+const add = document.querySelector("#add");
+const sub = document.querySelector("#sub");
+const mul = document.querySelector("#mul");
+const div = document.querySelector("#div");
+
+let result = document.querySelector("#result");
+
+add.addEventListener("click", () => {
+  let num1 = Number(document.querySelector("#num1").value);
+  let num2 = Number(document.querySelector("#num2").value);
+
+  result.textContent = `Результат: ${num1 + num2}`;
+});
+
+sub.addEventListener("click", () => {
+  let num1 = Number(document.querySelector("#num1").value);
+  let num2 = Number(document.querySelector("#num2").value);
+
+  result.textContent = `Результат: ${num1 - num2}`;
+});
+
+mul.addEventListener("click", () => {
+  let num1 = Number(document.querySelector("#num1").value);
+  let num2 = Number(document.querySelector("#num2").value);
+
+  result.textContent = `Результат: ${num1 * num2}`;
+});
+
+div.addEventListener("click", () => {
+  let num1 = Number(document.querySelector("#num1").value);
+  let num2 = Number(document.querySelector("#num2").value);
+
+  result.textContent = `Результат: ${num1 / num2}`;
+});
+

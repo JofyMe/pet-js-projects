@@ -1,0 +1,50 @@
+#project {
+  padding-top: 120px;
+}
+#project .project {
+  width: 70%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#project .project__text {
+  padding-top: 10%;
+}
+#project .project__card {
+  width: 80%;
+  margin: 0 auto;
+}
+#project .project__card .project__values {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 20px;
+  margin-top: 40px;
+}
+#project .project__card .project__values input {
+  width: 100%;
+  padding: 24px 48px;
+  border-radius: 70px;
+  border: 0;
+  font-size: 18px;
+  background-color: #F2F2F2;
+  margin: 0 auto;
+}
+#project .project__card .project__signs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-top: 40px;
+}
+#project .project__card .project__signs button {
+  width: 100%;
+  font-size: 28px;
+  text-align: center;
+}
+#project .project__result {
+  text-align: left;
+  margin-top: 40px;
+}
