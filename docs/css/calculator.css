@@ -1,5 +1,10 @@
 #project {
-  padding-top: 120px;
+  padding-top: 140px;
+}
+@media screen and (max-width: 768px) {
+  #project {
+    padding-top: 90px;
+  }
 }
 #project .project {
   width: 70%;
@@ -8,8 +13,10 @@
   align-items: center;
   text-align: center;
 }
-#project .project__text {
-  padding-top: 10%;
+@media screen and (max-width: 768px) {
+  #project .project__text .project__title {
+    font-size: 48px;
+  }
 }
 #project .project__card {
   width: 80%;

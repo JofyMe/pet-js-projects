@@ -1,7 +1,11 @@
 @import "variables.scss";
 
 #project {
-  padding-top: 120px;
+  padding-top: 140px;
+
+  @media screen and (max-width: $bp-medium) {
+    padding-top: 90px;
+  }
   .project {
     width: 70%;
     display: grid;
@@ -9,8 +13,10 @@
     align-items: center;
     text-align: center;
     &__text {
-      padding-top: 10%;
       .project__title {
+        @media screen and (max-width: $bp-medium) {
+          font-size: 48px;
+        }
       }
     }
     &__card {
