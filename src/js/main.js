@@ -19,24 +19,39 @@ burger.addEventListener("click", (e) => {
 
 //Calculator code
 
-document.querySelector("#add").addEventListener("click", () => mainCalc("+"));
-document.querySelector("#sub").addEventListener("click", () => mainCalc("-"));
-document.querySelector("#mul").addEventListener("click", () => mainCalc("*"));
-document.querySelector("#div").addEventListener("click", () => mainCalc("/"));
+const num1 = document.querySelector("#num1");
+const num2 = document.querySelector("#num2");
 
-const mainCalc = (sign) => {
-  const num1 = Number(document.querySelector("#num1").value);
-  const num2 = Number(document.querySelector("#num2").value);
-  let result;
-  if (sign === "+") {
-    result = num1 + num2;
-  } else if (sign === "-") {
-    result = num1 - num2;
-  } else if (sign === "*") {
-    result = num1 * num2;
-  } else if (sign === "/") {
-    result = num1 / num2;
-  }
-  document.querySelector("#result").textContent = `Result: ${result}`;
-};
+const add = document.querySelector("#add");
+const sub = document.querySelector("#sub");
+const mul = document.querySelector("#mul");
+const div = document.querySelector("#div");
 
+const result = document.querySelector("#result");
+
+const actions = [add, sub, mul, div];
+
+actions.forEach((i) => {
+  i.addEventListener("click", (e) => {
+    const value1 = parseFloat(num1.value);
+    const value2 = parseFloat(num2.value);
+
+    switch (i) {
+      case add:
+        result.textContent = "Result: " + (value1 + value2);
+        break;
+      case sub:
+        result.textContent = "Result: " + (value1 - value2);
+        break;
+      case mul:
+        result.textContent = "Result: " + value1 * value2;
+        break;
+      case div:
+        result.textContent = "Result: " + value1 / value2;
+        break;
+
+      default:
+        break;
+    }
+  });
+});
