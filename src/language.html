@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Your website</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- ANIMATION -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- ADD OPEN SANS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ADD INTER -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASoz E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- HEADER BLOCK -->
+      <header id="header">
+        <div class="header container">
+          <div class="header__logo">
+            <a href="index.html">
+              <img src="images/template/logo.svg" />
+            </a>
+          </div>
+          <nav class="header__navbar">
+            <ul class="header__menu">
+              <li class="header__item">
+                <a href="#" class="header__link">About</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Portfolio</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Resume</a>
+              </li>
+            </ul>
+            <a href="">
+              <button class="header__button button__white">
+                Let’s Chat
+                <img src="images/template/chat.png" alt="" />
+              </button>
+            </a>
+          </nav>
+          <div class="header__burger">
+            <span></span>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section id="project">
+          <div
+            class="project container"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="project__text">
+              <h1 class="project__title">
+                Name of the Pet Project: Calculator
+              </h1>
+            </div>
+            <div class="project__card">
+              <div class="project__values">
+                <input id="num1" type="number" placeholder="Enter the number 1" />
+                <input id="num2" type="number" placeholder="Enter the number 2" />
+              </div>
+              <div class="project__signs">
+                <button id="add">+</button>
+                <button id="sub">-</button>
+                <button id="mul">*</button>
+                <button id="div">/</button>
+              </div>
+
+              <h3 class="project__result" id="result">Result:</h3>
+
+              <!-- <input type="text" id="enter" /> -->
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer">
+        <div class="footer container">
+
+        </div>
+      </footer>
+    </div>
+
+    <!--BLOCK ANIMATION-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--MAIN SCRIPTS-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
