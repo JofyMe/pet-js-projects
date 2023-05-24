@@ -7,11 +7,8 @@
 
     <title>Your website</title>
 
-    <!-- STYLES -->
-    <link rel="stylesheet" href="css/main.css" />
-
     <!-- ANIMATION -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,7 +40,7 @@
         <div class="header container">
           <div class="header__logo">
             <a href="">
-              <img src="images/template/logo.svg" />
+              <img src="images/logo.svg" />
             </a>
           </div>
           <nav class="header__navbar">
@@ -61,7 +58,7 @@
             <a href="">
               <button class="header__button button__white">
                 Let’s Chat
-                <img src="images/template/chat.png" alt="" />
+                <img src="images/chat.png" alt="" />
               </button>
             </a>
           </nav>
@@ -71,12 +68,8 @@
         </div>
       </header>
       <main>
-        <section id="hero">
-          <div
-            class="hero container"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
+        <section id="hero" data-aos="fade-up">
+          <div class="hero container">
             <div class="hero__text">
               <h4 class="hero__subtitle">Hello! world</h4>
               <h1 class="hero__title">
@@ -99,7 +92,7 @@
               </div>
             </div>
             <div class="hero__img">
-              <img src="images/template/hero/main.png" alt="" />
+              <img src="images/hero/main.png" alt="" />
             </div>
           </div>
         </section>
@@ -124,11 +117,11 @@
             </div>
             <div class="expert__skills">
               <div class="expert__item expert__item-blue">
-                <img src="images/template/expert/code.png" alt="" />
+                <img src="images/expert/code.png" alt="" />
                 <h6 class="expert__subtitle">Coding & Programming</h6>
               </div>
               <div class="expert__item expert__item-red">
-                <img src="images/template/expert/banner.png" alt="" />
+                <img src="images/expert/banner.png" alt="" />
                 <h6 class="expert__subtitle">Product & Brand Designer</h6>
               </div>
             </div>
@@ -156,7 +149,7 @@
                     Lorem ipsum dolor sit amet consectetur adipiscing elit sed
                     do eiusmod tempor incididunt ut labore.
                   </p>
-                  <a href="calculator.html">
+                  <a href="/pages/calculator.html">
                     <button class="work__button button__white">Click</button>
                   </a>
                 </div>
@@ -217,11 +210,11 @@
         </div>
       </footer>
     </div>
-
     <!--BLOCK ANIMATION-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--MAIN SCRIPTS-->
-    <script src="js/main.js"></script>
+    
+    <script type="module" src="src/js/main.js"></script>
   </body>
 </html>

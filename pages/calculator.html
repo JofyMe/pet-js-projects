@@ -7,9 +7,6 @@
 
     <title>Your website</title>
 
-    <!-- STYLES -->
-    <link rel="stylesheet" href="css/main.css" />
-
     <!-- ANIMATION -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
@@ -42,8 +39,8 @@
       <header id="header">
         <div class="header container">
           <div class="header__logo">
-            <a href="index.html">
-              <img src="images/template/logo.svg" />
+            <a href="../">
+              <img src="../images/logo.svg" />
             </a>
           </div>
           <nav class="header__navbar">
@@ -84,8 +81,16 @@
             </div>
             <div class="project__card">
               <div class="project__values">
-                <input id="num1" type="number" placeholder="Enter the number 1" />
-                <input id="num2" type="number" placeholder="Enter the number 2" />
+                <input
+                  id="num1"
+                  type="number"
+                  placeholder="Enter the number 1"
+                />
+                <input
+                  id="num2"
+                  type="number"
+                  placeholder="Enter the number 2"
+                />
               </div>
               <div class="project__signs">
                 <button id="add">+</button>
@@ -102,9 +107,7 @@
         </section>
       </main>
       <footer id="footer">
-        <div class="footer container">
-
-        </div>
+        <div class="footer container"></div>
       </footer>
     </div>
 
@@ -112,6 +115,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--MAIN SCRIPTS-->
-    <script src="js/main.js"></script>
+    <script src="../src/js/calculator.js"></script>
+
+    <script type="module" src="../src/js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,15 @@
+// DEFAULT
+@import "default.scss";
+@import "variables.scss";
+
+
+//HEADER
+@import "components/header.scss";
+
+//PAGES
+
+@import "pages/index.scss";
+@import "pages/calculator.scss";
+
+//FOOTER
+@import "components/footer.scss";

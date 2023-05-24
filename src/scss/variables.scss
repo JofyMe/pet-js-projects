@@ -1,0 +1,43 @@
+//?FONTS
+$primary-font: "Open Sans";
+$secondary-font: "Inter";
+$default-font: sans-serif;
+
+//?COLORS
+//Main colors
+$primary-color: #263238;
+$secondary-color: #FF8C92;
+$white: #fff;
+$black: #000;
+
+//UI colors
+$success-color: #28a745;
+$danger-color: #dc3545;
+$info-color: #17a2b8;
+$warning-color: #ffc107;
+
+$light-color: #F2F2F2;
+$dark-color: #4E4E4E;
+
+//?COMPONENTS COLORS
+$background-color: $white;
+$text-color: $primary-color;
+$header-color: $light-color;
+$link-color: $text-color;
+$link-color-hover: $secondary-color;
+$border-color: #ced4da;
+
+//?BREAK POINTS
+$bp-small: 480px;
+$bp-medium: 768px;
+$bp-large: 992px;
+$bp-xlarge: 1200px;
+$bp-container: 1400px;
+
+//?INDENTS
+$indents: 4px;
+
+//Header
+$height-header: 100px;
+
+

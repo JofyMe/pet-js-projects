@@ -1,0 +1,188 @@
+@import "../variables.scss";
+
+#header {
+  width: 100%;
+  background-color: $header-color;
+  opacity: 0.95;
+  display: flex;
+  position: fixed;
+  z-index: 10;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $link-color;
+    margin: 10px auto;
+
+    &__logo {
+      margin-top: 4px;
+      img {
+        width: 100%;
+      }
+    }
+
+    &__navbar {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &.open {
+        display: flex;
+        margin: 0;
+      }
+      .header__menu {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 60px;
+
+        .header__item {
+          .header__link {
+            color: $link-color;
+
+            &:hover {
+              color: $link-color-hover;
+            }
+          }
+        }
+      }
+
+      .header__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: $bp-large) {
+          margin: 0 auto;
+        }
+
+        img {
+          width: 22px;
+          margin-left: 8px;
+        }
+      }
+    }
+
+    &__burger {
+      display: none;
+      position: relative;
+      align-items: center;
+      justify-content: flex-end;
+      width: 32px;
+      height: 18px;
+      z-index: 50;
+
+      &.active {
+        span {
+          transform: scale(0);
+        }
+        &::before {
+          top: 50%;
+          transform: rotate(-45deg) translate(0, -50%);
+        }
+        &::after {
+          bottom: 50%;
+          transform: rotate(45deg) translate(0, 50%);
+        }
+      }
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: $text-color;
+        transition: all 0.3s;
+      }
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+
+      span {
+        height: 3px;
+        width: 100%;
+        transform: scale(1);
+        background-color: $text-color;
+        transition: all 0.3s;
+      }
+    }
+    @media (max-width: $bp-large) {
+      &__logo {
+        margin-top: 4px;
+        img {
+          width: 70%;
+        }
+      }
+      &__burger {
+        display: flex;
+
+        &.active {
+          &::after,
+          &::before {
+            background-color: $white;
+            transition: all 0.3s;
+          }
+
+          span {
+            background-color: $white;
+            transition: all 0.3s;
+          }
+        }
+      }
+
+      &__navbar {
+        opacity: 0;
+        height: 0%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 60% 30%;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        right: 0;
+        overflow-y: auto;
+        background-color: $dark-color;
+        transition: all 1s;
+
+        &.open {
+          opacity: 1;
+          height: 100%;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(2, 1fr);
+          grid-template-rows: 60% 30%;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          transition: all 0.5s;
+        }
+
+        .header__menu {
+          height: 50%;
+          row-gap: 30px;
+          flex-direction: column;
+          align-items: center;
+          margin: auto;
+          .header__item {
+            .header__link {
+              color: $white;
+              font-size: 18px;
+            }
+          }
+        }
+        .header__chat {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
