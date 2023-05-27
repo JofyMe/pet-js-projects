@@ -2,8 +2,10 @@
 
 Project assembler template for layout and further convenient work
 
+[DEMO](https://jofyme.github.io/pet-js-projects/)
+
 ## List Project
-* Calculator - The usual calculator
+* [Calculator](https://jofyme.github.io/pet-js-projects/calculator.html) - The usual calculator
 * TODO List - Project thanks to which you can specify the readiness of daily tasks
 * Currency Converter - A special form that allows you to convert currencies
 * Language Learning - A project through which I want to continue practicing English
